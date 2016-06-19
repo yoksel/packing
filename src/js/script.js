@@ -1,8 +1,19 @@
 (function (window) {
 
+  'use strict';
+
   var $ = tinyLib;
+
+  if ( !config ) {
+    console.log( 'Конфиг не найден' );
+    return;
+  }
+
   var volumesContent = $.get('.volumes__list');
   var resultContent = $.get('.result__list');
+
+  var volumes = config.volumes;
+  var boxes = config.boxes;
 
   var volumesSum = 0;
 
@@ -140,9 +151,9 @@
       var metricsOut = metricsElem.elem.outerHTML;
 
       var out = [
-        metricsOut + ' — ' + box.price + 'р.',
-        'Нужное количество: ' + boxCount,
-        'Стоимость: ' + box.price * boxCount + 'р.' ,
+        metricsOut + ' — ' + box.price + ' р.',
+        'Нужное количество: ' + boxCount + ' шт.',
+        'Стоимость: ' + box.price * boxCount + ' р.' ,
       ].join( '<br>' );
 
       var item = $.create('li').addClass('result__item').html( out );

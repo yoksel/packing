@@ -23,6 +23,7 @@ UL {
 }
 
 H1, H2, H3, H4, H5 {
+  border-bottom: 3px solid #EEE;
   font-weight: normal;
 }
 
@@ -33,7 +34,8 @@ H1, H2, H3, H4, H5 {
 .footer {
   @include container-width;
   margin: 1rem auto;
-  padding: .5rem;
+  padding: .5rem 2rem;
+  box-sizing: border-box;
   border: 1px solid #DDD;
 }
 
@@ -49,8 +51,12 @@ H1, H2, H3, H4, H5 {
   flex-grow: 1;
 }
 .aside {
-  flex-basis: 200px;
-  margin-left: 30px;
+  flex-basis: 350px;
+  margin-left: 2rem;
+
+  @media ( max-width: $bp-desktop ) {
+    flex-basis: 200px;
+  }
 
   @media ( max-width: $bp-tablet ) {
     flex-basis: 0;

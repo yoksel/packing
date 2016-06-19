@@ -2,7 +2,6 @@
   @include container-width;
 
   margin: 1rem auto;
-  padding: .5rem;
 
   display: flex;
   justify-content: space-between;
@@ -14,6 +13,10 @@
 
   background: khaki;
   border: 1px solid rgba(0,0,0,.1);
+}
+
+.title {
+  border-bottom: 0;
 }
 
 .nav {
