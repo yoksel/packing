@@ -1,0 +1,19 @@
+.volumes__item {
+  margin-bottom: 1rem;
+}
+
+.result__item {
+  margin-bottom: 1rem;
+}
+
+.metrics {
+  font-style: italic;
+  color: #999;
+
+  &:before {
+    content: "(";
+  }
+  &:after {
+    content: ")";
+  }
+}

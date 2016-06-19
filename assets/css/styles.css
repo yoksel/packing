@@ -416,6 +416,20 @@ H1, H2, H3, H4, H5 {
   display: inline-block;
   margin: 0 .5rem; }
 
+.volumes__item {
+  margin-bottom: 1rem; }
+
+.result__item {
+  margin-bottom: 1rem; }
+
+.metrics {
+  font-style: italic;
+  color: #999; }
+  .metrics:before {
+    content: "("; }
+  .metrics:after {
+    content: ")"; }
+
 .footer {
   max-width: 320px;
   display: flex;
@@ -434,15 +448,15 @@ H1, H2, H3, H4, H5 {
   display: inline-block;
   margin: 0 .5rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .header,
     .container,
     .footer {
-    max-width: 768px; }
+    max-width: 600px; }
   .header {
-    max-width: 768px; }
+    max-width: 600px; }
   .footer {
-    max-width: 768px; } }
+    max-width: 600px; } }
 
 @media (min-width: 1000px) {
   .header,
@@ -454,7 +468,7 @@ H1, H2, H3, H4, H5 {
   .footer {
     max-width: 1000px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column; }
   .aside {
